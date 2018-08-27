@@ -1,9 +1,10 @@
+import Layout from '../src/layout/Layout';
 import Link from 'next/link';
 
 const About = () => (
-  <div>
-    <Link href="/">This is an about page.</Link>
-  </div>
+  <Layout>
+    <p>This is an about page.</p>
+  </Layout>
 );
 
 export default About;

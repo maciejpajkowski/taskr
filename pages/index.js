@@ -1,10 +1,9 @@
-import Sidebar from '../src/components/Sidebar';
+import Layout from '../src/layout/Layout';
 
 const Index = () => (
-  <div>
-    <Sidebar />
+  <Layout>
     <p>Hello Next.js</p>
-  </div>
+  </Layout>
 );
 
 export default Index;
