@@ -5,7 +5,7 @@ injectGlobal`
   body {
     margin: 0;
     color: #000;
-    font-family: 'Arial';
+    font-family: 'Verdana';
     box-sizing: border-box;
   }
 `;

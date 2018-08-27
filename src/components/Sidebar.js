@@ -6,6 +6,7 @@ const Container = styled.div`
   width: 280px;
   background-color: #484848;
   color: #eee;
+  position: relative;
 
   a {
     text-decoration: none;
@@ -24,8 +25,21 @@ const Container = styled.div`
   }
 
   li {
-    font-weight: 600;
     list-style-type: none;
+    transition: all 0.3s;
+  }
+
+  li:hover {
+    background-color: #555555;
+    cursor: pointer;
+    padding-left: 30px;
+  }
+
+  span {
+    color: #333;
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
   }
 `
 
@@ -47,6 +61,7 @@ const Sidebar = () => (
         </Link>
       </li>
     </ul>
+    <span>Copyright © MP</span>
   </Container>
 );
 
