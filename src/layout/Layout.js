@@ -10,10 +10,20 @@ const StyledLayout = styled.div`
   margin: 0;
 `;
 
+const StyledMain = styled.div`
+  background-color: #999;
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+  padding: 10px;
+`;
+
 const Layout = (props) => (
   <StyledLayout>
     <Sidebar />
-    {props.children}
+    <StyledMain>
+      {props.children}
+    </StyledMain>
   </StyledLayout>
 );
 

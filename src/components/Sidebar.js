@@ -18,6 +18,10 @@ const Container = styled.div`
     margin: 0;
   }
 
+  h1 {
+    background-color: #363636;
+  }
+
   h1, li {
     margin: 0;
     border-bottom: 1px solid #343434;
@@ -41,25 +45,33 @@ const Container = styled.div`
     left: 20px;
     bottom: 20px;
   }
-`
+`;
 
 const Sidebar = () => (
   <Container>
     <h1>Taskr</h1>
     <ul>
-      <li>
-        <Link href="/">
-          <a>Overview</a>
-        </Link>
-      </li>
-      <li><Link href="/create-task">
-          <a>Create new task</a>
-        </Link></li>
-      <li>
-        <Link href="/about">
-          <a>About</a>
-        </Link>
-      </li>
+      <Link href="/">
+        <a>
+          <li>
+            Overview
+          </li>
+        </a>
+      </Link>
+      <Link href="/create-task">
+        <a>
+          <li>
+            Create a new task
+          </li>
+        </a>
+      </Link>
+      <Link href="/about">
+        <a>
+          <li>
+            About
+          </li>
+        </a>
+      </Link>
     </ul>
     <span>Copyright © MP</span>
   </Container>

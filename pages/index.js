@@ -1,8 +1,9 @@
 import Layout from '../src/layout/Layout';
+import Summary from '../src/components/Summary';
 
 const Index = () => (
   <Layout>
-    <p>Hello Next.js</p>
+    <Summary />
   </Layout>
 );
 
