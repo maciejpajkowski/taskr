@@ -13,7 +13,7 @@ const StyledLayout = styled.div`
 const StyledMain = styled.div`
   background-color: #999;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   flex-grow: 1;
   padding: 10px;
 `;

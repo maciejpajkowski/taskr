@@ -3,7 +3,7 @@ import Link from 'next/link';
 import styled from 'styled-components';
 
 const Container = styled.div`
-  width: 280px;
+  min-width: 280px;
   background-color: #484848;
   color: #eee;
   position: relative;

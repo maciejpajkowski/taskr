@@ -6,7 +6,7 @@ const Container = styled.div`
   color: #fff;
   background-color: #484848;
   flex-grow: 0.3;
-  height: 50%;
+  height: 20%;
   margin: 10px;
   box-shadow: 0px 1px 14px 1px #555;
 
@@ -22,25 +22,29 @@ const Container = styled.div`
   }
 
   span {
-    color: aqua;
+    color: skyblue;
+    font-weight: 600;
   }
-`
+`;
 
 const Summary = (props) => (
   <Container>
     <h1>Summary</h1>
-    <p>You currently have <span>{props.tasksToDo}</span> tasks to do, and completed <span>{props.tasksFinished}</span>.</p>
+    <p>You currently have <span>{props.tasksToDo}</span> tasks to do and <span>{props.tasksFinished}</span> completed.</p>
+    <p>Level: <span>{props.level}</span></p>
   </Container>
 );
 
 Summary.propTypes = {
   tasksToDo: PropTypes.number,
-  tasksFinished: PropTypes.number
+  tasksFinished: PropTypes.number,
+  level: PropTypes.number
 };
 
 Summary.defaultProps = {
   tasksToDo: 0,
-  tasksFinished: 0
+  tasksFinished: 0,
+  level: 1
 };
 
 export default Summary;
