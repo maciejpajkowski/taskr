@@ -3,10 +3,12 @@ import Link from 'next/link';
 import styled from 'styled-components';
 
 const Container = styled.div`
-  min-width: 280px;
+  min-width: 260px;
   background-color: #484848;
   color: #eee;
   position: relative;
+  z-index: 4;
+  scroll-behavior: none;
 
   a {
     text-decoration: none;

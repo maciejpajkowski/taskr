@@ -1,12 +1,18 @@
 import Layout from '../src/layout/Layout';
-import Summary from '../src/components/Summary';
 import TaskList from '../src/components/TaskList';
 import Task from '../src/components/Task';
+import Navbar from '../src/components/Navbar';
 
 const Index = () => (
   <Layout>
-    <Summary />
+    <Navbar>Overview</Navbar>
     <TaskList>
+      <Task />
+      <Task />
+      <Task />
+      <Task />
+      <Task />
+      <Task />
       <Task />
     </TaskList>
   </Layout>

@@ -6,8 +6,10 @@ const Container = styled.div`
   color: #fff;
   background-color: #484848;
   flex-grow: 0;
+  height: 100%;
+  width: 300px;
   margin: 10px;
-  box-shadow: 0px 1px 14px 1px #222;
+  box-shadow: 0px 1px 4px 1px #777;
 
   h3 {
     color: #eee;
