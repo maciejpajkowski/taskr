@@ -12,20 +12,18 @@ store.dispatch(createTask({ id: 321, description: 'Build a new app' }));
 const Index = () => (
   
     <Layout>
-      <div>
-        <Provider store={store}>
-          <Navbar>Overview</Navbar>
-          <TaskList>
-            <Task />
-            <Task />
-            <Task />
-            <Task />
-            <Task />
-            <Task />
-            <Task />
-          </TaskList>
-        </Provider>
-      </div>
+      <Provider store={store}>
+        <Navbar>Overview</Navbar>
+        <TaskList>
+          <Task />
+          <Task />
+          <Task />
+          <Task />
+          <Task />
+          <Task />
+          <Task />
+        </TaskList>
+      </Provider>
     </Layout>
   
 );
