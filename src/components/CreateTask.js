@@ -10,7 +10,7 @@ const CreateTask = (props) => {
     const [ description, setDescription ] = useState('');
     const router = useRouter();
     
-    const setNewId = () => {
+    const assignId = () => {
         if (props.tasks.length === 0) 
         {
             return 1;
@@ -28,7 +28,7 @@ const CreateTask = (props) => {
     const onSubmit = (e) => {
         e.preventDefault();
         props.createTask({
-            id: setNewId(),
+            id: assignId(),
             name,
             description
         });

@@ -10,6 +10,9 @@ const StyledTask = styled.div`
   box-shadow: 0px 1px 4px 1px #777;
 
   h3 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     color: #eee;
     margin: 0;
     background-color: #363636;
@@ -20,9 +23,19 @@ const StyledTask = styled.div`
     padding: 0.6em 20px;
   }
 
-  span {
-    color: skyblue;
-    font-weight: 600;
+  button {
+    background: none;
+    border: 0;
+    color: #777;
+    font-weight: 800;
+    font-size: 1rem;
+    transition: all 0.3s;
+
+    &:hover {
+      color: red;
+      transform: translateZ(10px);
+      cursor: pointer;
+    }
   }
 `;
 

@@ -28,7 +28,7 @@ const Sidebar = () => (
         </a>
       </Link>
     </ul>
-    <span>Copyright © MP</span>
+    <span>Copyright © MP 2020</span>
   </StyledSidebar>
 );
 
