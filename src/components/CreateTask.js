@@ -2,17 +2,37 @@ import React, { useState } from 'react';
 import StyledFrame from '../styles/StyledFrame'
 import StyledForm from '../styles/StyledForm';
 import { connect } from 'react-redux';
+import { createTask } from '../actions/tasksActions';
+import { useRouter } from 'next/router';
 
 const CreateTask = (props) => {
     const [ name, setName ] = useState('');
     const [ description, setDescription ] = useState('');
+    const router = useRouter();
     
+    const setNewId = () => {
+        if (props.tasks.length === 0) 
+        {
+            return 1;
+        }
+        else
+        {
+            const ids = [];
+            props.tasks.map((task) => {
+                ids.push(task.id);
+            });
+            return Math.max(...ids) + 1;
+        }
+    }
+
     const onSubmit = (e) => {
         e.preventDefault();
         props.createTask({
+            id: setNewId(),
             name,
             description
         });
+        router.push("/");
     }
 
     return (
@@ -34,7 +54,6 @@ const CreateTask = (props) => {
                 <div>
                     <button>Create task!</button>
                 </div>
-                
             </StyledForm>
         </StyledFrame>
     )
@@ -44,4 +63,8 @@ const mapDispatchToProps = (dispatch) => ({
     createTask: (task) => dispatch(createTask(task))
 });
 
-export default connect(undefined, mapDispatchToProps)(CreateTask);
+const mapStateToProps = (state) => ({
+    tasks: state.tasks
+})
+
+export default connect(mapStateToProps, mapDispatchToProps)(CreateTask);

@@ -13,6 +13,7 @@ export default () => {
   );
 
   store.dispatch(createTask({ id: 1, name: 'Test task', description: 'Test description' }));
+  store.dispatch(createTask({ id: 2, name: 'Dayum', description: 'son' }));
 
   return store;
 };
