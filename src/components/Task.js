@@ -2,24 +2,21 @@ import React from 'react';
 import StyledTask from '../styles/StyledTask';
 import PropTypes from 'prop-types';
 
-const Task = (props) => (
+const Task = ({ name, description }) => (
   <StyledTask>
-    <h3>{props.taskName}</h3>
-    <p>{props.taskDescription}</p>
-    <p>{props.taskExp}exp</p>
+    <h3>{name}</h3>
+    <p>{description}</p>
   </StyledTask>
 );
 
 Task.propTypes = {
-  taskName: PropTypes.string,
-  taskDescription: PropTypes.string,
-  taskExp: PropTypes.number
+  name: PropTypes.string,
+  description: PropTypes.string
 };
 
 Task.defaultProps = {
-  taskName: 'Unnamed task',
-  taskDescription: 'No description has been specified',
-  taskExp: 100
+  name: 'Unnamed task',
+  description: 'No description has been specified'
 };
 
 export default Task;

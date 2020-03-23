@@ -1,6 +1,6 @@
 export const createTask = (task) => ({
   type: 'CREATE_TASK',
-  ...task
+  task
 });
 
 export const removeTask = ({ id } = {}) => ({

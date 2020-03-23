@@ -5,6 +5,6 @@ const CreateTaskPage = () => (
   <Layout>
     <CreateTask />
   </Layout>
-);
+)
 
 export default CreateTaskPage;

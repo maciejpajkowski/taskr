@@ -1,6 +1,4 @@
-const tasksReducerDefaultState = [];
-
-export default (state = tasksReducerDefaultState, action) => {
+export default (state = [], action) => {
   switch (action.type) {
     case 'CREATE_TASK':
       return [
