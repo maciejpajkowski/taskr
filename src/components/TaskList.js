@@ -1,19 +1,10 @@
 import React from 'react';
-import styled from 'styled-components';
-
-const Container = styled.div`
-  color: #fff;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  overflow-y: auto;
-`;
+import StyledTaskList from '../styles/StyledTaskList';
 
 const TaskList = (props) => (
-  <Container>
+  <StyledTaskList>
     {props.children}
-  </Container>
+  </StyledTaskList>
 );
 
-export { TaskList as default }
-
+export default TaskList;

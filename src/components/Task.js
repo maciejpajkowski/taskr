@@ -22,4 +22,4 @@ Task.defaultProps = {
   taskExp: 100
 };
 
-export { Task as default }
+export default Task;

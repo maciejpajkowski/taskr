@@ -9,4 +9,4 @@ const GlobalStyle = createGlobalStyle`
   }
 `;
 
-export { GlobalStyle as default }
+export default GlobalStyle;

@@ -1,9 +1,10 @@
 import Layout from '../src/layout/Layout';
+import CreateTask from '../src/components/CreateTask';
 
-const CreateTask = () => (
+const CreateTaskPage = () => (
   <Layout>
-    <p>This is the task creation page. Still very much WIP.</p>
+    <CreateTask />
   </Layout>
 );
 
-export default CreateTask;
+export default CreateTaskPage;

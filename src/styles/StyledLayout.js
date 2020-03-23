@@ -8,4 +8,4 @@ const StyledLayout = styled.div`
   margin: 0;
 `;
 
-export { StyledLayout as default }
+export default StyledLayout;

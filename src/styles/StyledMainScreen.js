@@ -7,4 +7,4 @@ const StyledMainScreen = styled.div`
   padding: 10px;
 `;
 
-export { StyledMainScreen as default }
+export default StyledMainScreen;

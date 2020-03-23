@@ -1,15 +1,14 @@
 import styled from 'styled-components';
 
-const StyledTask = styled.div`
+const StyledSummary = styled.div`
   color: #fff;
   background-color: #484848;
-  flex-grow: 0;
-  height: 100%;
-  width: 300px;
+  flex-grow: 0.3;
+  height: 20%;
   margin: 10px;
-  box-shadow: 0px 1px 4px 1px #777;
+  box-shadow: 0px 1px 14px 1px #555;
 
-  h3 {
+  h1 {
     color: #eee;
     margin: 0;
     background-color: #363636;
@@ -26,4 +25,4 @@ const StyledTask = styled.div`
   }
 `;
 
-export default StyledTask
+export default StyledSummary;

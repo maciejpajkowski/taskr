@@ -1,38 +1,21 @@
 import React from 'react';
-import styled from 'styled-components';
-
-const Container = styled.div`
-  color: #fff;
-  background-color: #484848;
-  flex-grow: 0.3;
-  margin: 10px;
-  box-shadow: 0px 1px 14px 1px #555;
-
-  h1 {
-    color: #eee;
-    margin: 0;
-    background-color: #363636;
-    padding: 0.6em 20px;
-  }
-
-  p {
-    padding: 0.6em 20px;
-  }
-
-  span {
-    color: skyblue;
-    font-weight: 600;
-  }
-`;
+import StyledFrame from '../styles/StyledFrame';
 
 const About = () => (
-  <Container>
+  <StyledFrame>
     <h1>About</h1>
-    <p>This is a simple task management app created by Matthias Parker.<br/> The goal of this project was to create a working application,
-    connected to a database of tasks, <br/> which would also serve in an RPG-like way (hence the levels and experience points).</p>
+    <p>
+      This is a simple task management app created by Maciej Pajkowski.
+      <br/> 
+      The goal of this project was to create a basic To-Do application 
+      using React with Redux.
+    </p>
+    <p>
+      Redux obviously isn't a very good choice for such small application
+      and may seem like an overkill, however practice makes perfect, so - why not?
+    </p>
     <p>Current version: 0.0.0.1 (still very much WIP).</p>
-    <p>Enjoy!</p>
-  </Container>
+  </StyledFrame>
 );
 
 export default About;
