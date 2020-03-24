@@ -8,6 +8,7 @@ import { useRouter } from 'next/router';
 const CreateTask = (props) => {
     const [ name, setName ] = useState('');
     const [ description, setDescription ] = useState('');
+    const [ error, setError ] = useState('');
     const router = useRouter();
     
     const assignId = () => {
@@ -27,18 +28,26 @@ const CreateTask = (props) => {
 
     const onSubmit = (e) => {
         e.preventDefault();
-        props.createTask({
-            id: assignId(),
-            name,
-            description
-        });
-        router.push("/");
+        if (name.length !== 0)
+        {
+            props.createTask({
+                id: assignId(),
+                name,
+                description
+            });
+            router.push("/");
+        }
+        else
+        {
+            setError('Task name must not be empty!');
+        }
     }
 
     return (
         <StyledFrame>
             <h1>Create a new task</h1>
             <StyledForm onSubmit={onSubmit}>
+                {!!error && <span>{error}</span>}
                 <input 
                     type="text" 
                     placeholder="Task name" 
