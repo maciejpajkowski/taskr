@@ -59,6 +59,11 @@ const StyledForm = styled.form`
             background: #888;
         }
     }
+
+    span {
+        margin-bottom: 1rem;
+        color: #d33;
+    }
 `;
 
 export default StyledForm;

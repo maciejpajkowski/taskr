@@ -59,12 +59,12 @@ const CreateTask = (props) => {
     )
 }
 
+const mapStateToProps = (state) => ({
+    tasks: state.tasks
+});
+
 const mapDispatchToProps = (dispatch) => ({
     createTask: (task) => dispatch(createTask(task))
 });
-
-const mapStateToProps = (state) => ({
-    tasks: state.tasks
-})
 
 export default connect(mapStateToProps, mapDispatchToProps)(CreateTask);

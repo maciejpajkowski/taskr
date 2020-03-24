@@ -14,7 +14,13 @@ const About = () => (
       Redux obviously isn't a very good choice for such small application
       and may seem like an overkill, however practice makes perfect, so - why not?
     </p>
-    <p>Current version: 0.0.0.1 (still very much WIP).</p>
+    <p>
+      It currently does not save data in any way, so once the page is refreshed - 
+      the data is gone, sadly. However, since this project was waiting over a year
+      for me to actually understand Redux and finish it in a most basic state, 
+      the current form of it is acceptable for me.
+    </p>
+    <p>Current version: 1.0.0</p>
   </StyledFrame>
 );
 

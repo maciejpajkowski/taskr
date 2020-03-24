@@ -3,6 +3,7 @@ import StyledTask from '../styles/StyledTask';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { removeTask } from '../actions/tasksActions';
+import Link from 'next/link';
 
 const Task = (props) => {
   return (
@@ -10,7 +11,14 @@ const Task = (props) => {
       <div>
         <h3>
           {props.name}
-          <button onClick={() => props.removeTask(props.id)}>X</button>
+          <div>
+            <Link href="/task/[id]" as={`/task/${props.id}`}>
+              <a>
+                EDIT
+              </a>
+            </Link>
+            <button onClick={() => props.removeTask(props.id)}>X</button>
+          </div>
         </h3>
       </div>
       <p>{props.description}</p>

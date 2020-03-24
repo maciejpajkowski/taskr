@@ -32,9 +32,23 @@ const StyledTask = styled.div`
     transition: all 0.3s;
 
     &:hover {
-      color: red;
+      color: #006611;
       transform: translateZ(10px);
       cursor: pointer;
+    }
+  }
+
+  a {
+    text-decoration-line: none;
+    color: #aaa;
+    font-size: 1rem;
+    margin-right: 1rem;
+    transition: all 0.3s;
+
+    &:hover {
+      color: #fff;
+      cursor: pointer;
+      font-size: 1.1rem;
     }
   }
 `;
