@@ -1,11 +1,15 @@
 import styled from 'styled-components';
 
 const StyledLayout = styled.div`
-  display: grid;
-  grid-template-columns: 1fr 6fr;
+  display: flex;
+  flex-direction: row;
   height: 100vh;
-  width: 100%;
+  width: 100vw;
   margin: 0;
+
+  @media (max-width: 45rem) {
+    flex-direction: column;
+  }
 `;
 
 export default StyledLayout;

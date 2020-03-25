@@ -3,8 +3,8 @@ import styled from 'styled-components';
 const StyledFrame = styled.div`
   color: #fff;
   background-color: #484848;
-  flex-grow: 0.3;
-  margin: 10px;
+  flex-grow: 0;
+  margin: 20px;
   box-shadow: 0px 1px 14px 1px #555;
 
   h1 {

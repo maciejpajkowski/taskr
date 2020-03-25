@@ -4,8 +4,7 @@ const StyledTask = styled.div`
   color: #fff;
   background-color: #484848;
   flex-grow: 0;
-  height: 100%;
-  width: 300px;
+  min-width: 240px;
   margin: 10px;
   box-shadow: 0px 1px 4px 1px #777;
 
@@ -17,10 +16,20 @@ const StyledTask = styled.div`
     margin: 0;
     background-color: #363636;
     padding: 0.6em 20px;
+    word-break: break-all;
+
+    div {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      min-width: 7rem;
+    }
   }
 
   p {
     padding: 0.6em 20px;
+    word-break: break-all;
   }
 
   button {
@@ -30,25 +39,26 @@ const StyledTask = styled.div`
     font-weight: 800;
     font-size: 1rem;
     transition: all 0.3s;
+    margin-left: 1rem;
 
     &:hover {
       color: #006611;
-      transform: translateZ(10px);
       cursor: pointer;
     }
   }
+
+  
 
   a {
     text-decoration-line: none;
     color: #aaa;
     font-size: 1rem;
-    margin-right: 1rem;
+    margin-left: 1rem;
     transition: all 0.3s;
 
     &:hover {
       color: #fff;
       cursor: pointer;
-      font-size: 1.1rem;
     }
   }
 `;

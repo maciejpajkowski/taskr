@@ -1,9 +1,9 @@
 import React from 'react';
 import Link from 'next/link';
-import StyledSidebar from '../styles/StyledSidebar';
+import StyledMobileSidebar from '../styles/StyledMobileSidebar';
 
-const Sidebar = () => (
-  <StyledSidebar>
+const MobileSidebar = () => (
+  <StyledMobileSidebar>
     <div>
       <h1>Taskr</h1>
     </div>
@@ -31,7 +31,7 @@ const Sidebar = () => (
       </Link>
     </ul>
     <span>Copyright © MP 2020</span>
-  </StyledSidebar>
+  </StyledMobileSidebar>
 )
 
-export default Sidebar;
+export default MobileSidebar;
