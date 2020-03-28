@@ -20,10 +20,7 @@ const About = () => (
       for me to actually understand Redux and finish it in a most basic state, 
       the current form of it is acceptable for me.
     </p>
-    <p>Current version: 0.9.0</p>
-    <p>
-      To do: Fix RWD
-    </p>
+    <p>Current version: 1.0.0</p>
   </StyledFrame>
 );
 
