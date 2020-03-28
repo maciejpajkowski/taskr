@@ -9,6 +9,7 @@ const StyledLayout = styled.div`
 
   @media (max-width: 45rem) {
     flex-direction: column;
+    height: 100%;
   }
 `;
 

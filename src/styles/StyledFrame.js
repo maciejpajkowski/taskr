@@ -15,7 +15,7 @@ const StyledFrame = styled.div`
   }
 
   p {
-    padding: 0.5em 20px;
+    padding: 0.1em 20px;
 
     &:last-child {
       padding-bottom: 30px;

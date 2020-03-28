@@ -1,12 +1,14 @@
 import styled from 'styled-components';
 
 const StyledMobileSidebar = styled.div`
+    position: fixed;
     display: flex;
     flex-direction: column;
     width: 100%;
     background-color: #484848;
     color: #eee;
     z-index: 2;
+    transition: all 0.3s;
 
     a {
         text-decoration: none;
@@ -14,6 +16,7 @@ const StyledMobileSidebar = styled.div`
     }
 
     ul {
+        display: ${(props) => props.sidebarToggled ? "block" : "none"};
         padding: 0;
         margin: 0;
     }
@@ -29,6 +32,7 @@ const StyledMobileSidebar = styled.div`
 
         h1 {
             display: inline-block;
+            margin: 10px 0;
         }
 
         button {
@@ -57,9 +61,6 @@ const StyledMobileSidebar = styled.div`
 
     span {
         color: #333;
-        position: absolute;
-        left: 20px;
-        bottom: 20px;
     }
 
     @media (min-width: 45.1rem) {
